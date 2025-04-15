@@ -67,13 +67,13 @@ const handleRating = () => {
           <h1 className="text-3xl font-bold text-white mb-2">{movie.title}</h1>
           <p className="text-gray-400 text-lg">{movie.overview}</p>
           <div className="mt-6">
-  <label className="block text-white mb-2">Ta note (sur 10) :</label>
+  <label className="block text-white mb-2">note du film (sur 10) :</label>
   <input 
     type="number" 
     min="0" max="10" 
     value={note} 
     onChange={(e) => setNote(e.target.value)} 
-    className="px-2 py-1 rounded text-black"
+    className="px-2 py-1 rounded text-white"
   />
   <button onClick={handleRating} className="ml-4 px-3 py-1 bg-green-600 text-white rounded">
     Noter
